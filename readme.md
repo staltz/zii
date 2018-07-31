@@ -6,7 +6,7 @@ Adds a function `z` to the Object prototype so that you can right-compose functi
 
 **`value.z(first).z(second)` is the same as `second(first(value))`**
 
-- 150 bytes small!
+- 150 bytes small
 - Works with RxJS 6+
 - Works with Callbags
 - Works with plain functions and numbers and strings
@@ -23,6 +23,18 @@ npm install zii
 ```js
 require('zii');
 // Nothing else needed! This require will mutate the Object prototype
+```
+
+If you use TypeScript, then add this to your `tsconfig.json` file:
+
+```
+{
+  ...
+  "types": [
+    "node_modules/zii/index.d.ts"
+  ]
+  ...
+}
 ```
 
 ## Examples
