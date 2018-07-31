@@ -1,0 +1,25 @@
+{
+  "name": "zii",
+  "version": "1.0.0",
+  "description": "Chain function calls using a prototype function z",
+  "repository": "https://github.com/staltz/zii",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "author": "Andre Staltz <contact@staltz.com>",
+  "license": "MIT",
+  "keywords": [
+    "chain",
+    "pipe",
+    "functions",
+    "functional",
+    "compose"
+  ],
+  "devDependencies": {
+    "tape": "^4.8.0",
+    "typescript": "3.0.x",
+    "callbag-basics": "3.x.x",
+    "rxjs": "6.x.x"
+  }
+}
