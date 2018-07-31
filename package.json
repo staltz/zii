@@ -1,6 +1,6 @@
 {
   "name": "zii",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Chain function calls using a prototype function z",
   "repository": "https://github.com/staltz/zii",
   "main": "index.js",
