@@ -13,6 +13,6 @@ test('it can be used with callbag basics', t => {
     .z(
       forEach(x => {
         t.deepEquals(x, expected.shift());
-      }),
+      })
     );
 });
