@@ -24,3 +24,13 @@ test('it cannot be used with an input object with field "z"', t => {
     t.deepEquals(err.message, 'pre.z is not a function');
   }
 });
+
+test('it does not throw error when arg is non-function', t => {
+  t.plan(2);
+  const times3 = x => x * 3;
+
+  t.doesNotThrow(() =>{
+    const pre = (3).z(times3).z(null);
+    t.equal(pre, void 0);
+  });
+});
